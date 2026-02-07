@@ -70,14 +70,6 @@ export default {
           shopping: "hsl(var(--chart-shopping))",
           bills: "hsl(var(--chart-bills))",
         },
-        // GFX Neon Colors
-        neon: {
-          cyan: "hsl(180, 100%, 50%)",
-          magenta: "hsl(320, 90%, 60%)",
-          purple: "hsl(280, 100%, 60%)",
-          green: "hsl(150, 100%, 50%)",
-          yellow: "hsl(45, 100%, 55%)",
-        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -129,14 +121,6 @@ export default {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-5px)" },
         },
-        "glow-pulse": {
-          "0%, 100%": { 
-            boxShadow: "0 0 5px hsla(180, 100%, 50%, 0.4), 0 0 20px hsla(180, 100%, 50%, 0.2)" 
-          },
-          "50%": { 
-            boxShadow: "0 0 20px hsla(180, 100%, 50%, 0.6), 0 0 40px hsla(280, 100%, 60%, 0.4)" 
-          },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -149,12 +133,10 @@ export default {
         "slide-up": "slide-up 0.4s ease-out",
         shimmer: "shimmer 2s infinite linear",
         float: "float 3s ease-in-out infinite",
-        "glow-pulse": "glow-pulse 2s ease-in-out infinite",
       },
       boxShadow: {
-        glow: "0 0 20px -5px hsla(180, 100%, 50%, 0.4)",
-        "glow-lg": "0 0 40px -10px hsla(180, 100%, 50%, 0.5), 0 0 60px -15px hsla(280, 100%, 60%, 0.3)",
-        neon: "0 0 10px hsla(180, 100%, 50%, 0.5), 0 0 20px hsla(180, 100%, 50%, 0.3), 0 0 30px hsla(280, 100%, 60%, 0.2)",
+        glow: "0 0 20px -5px hsla(24, 95%, 53%, 0.3)",
+        "glow-lg": "0 0 40px -10px hsla(24, 95%, 53%, 0.4)",
       },
     },
   },

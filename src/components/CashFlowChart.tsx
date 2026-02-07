@@ -60,17 +60,17 @@ export const CashFlowChart = ({ data }: CashFlowChartProps) => {
             <Line
               type="monotone"
               dataKey="income"
-              stroke="hsl(150, 100%, 50%)"
+              stroke="hsl(142, 76%, 36%)"
               strokeWidth={3}
-              dot={{ fill: 'hsl(150, 100%, 50%)', strokeWidth: 2, r: 4 }}
+              dot={{ fill: 'hsl(142, 76%, 36%)', strokeWidth: 2, r: 4 }}
               activeDot={{ r: 6, strokeWidth: 0 }}
             />
             <Line
               type="monotone"
               dataKey="expense"
-              stroke="hsl(320, 90%, 60%)"
+              stroke="hsl(24, 95%, 53%)"
               strokeWidth={3}
-              dot={{ fill: 'hsl(320, 90%, 60%)', strokeWidth: 2, r: 4 }}
+              dot={{ fill: 'hsl(24, 95%, 53%)', strokeWidth: 2, r: 4 }}
               activeDot={{ r: 6, strokeWidth: 0 }}
             />
           </LineChart>

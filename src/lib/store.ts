@@ -179,12 +179,12 @@ export const formatRupiah = (amount: number): string => {
 
 export const getSpendingByCategory = (transactions: Transaction[]): { name: string; value: number; color: string }[] => {
   const categoryColors: Record<string, string> = {
-    Makanan: 'hsl(180, 100%, 55%)',
-    Transportasi: 'hsl(280, 100%, 65%)',
-    Hiburan: 'hsl(320, 90%, 60%)',
-    Belanja: 'hsl(45, 100%, 60%)',
-    Tagihan: 'hsl(200, 100%, 55%)',
-    Lainnya: 'hsl(150, 100%, 50%)',
+    Makanan: 'hsl(24, 95%, 53%)',
+    Transportasi: 'hsl(199, 89%, 48%)',
+    Hiburan: 'hsl(280, 65%, 60%)',
+    Belanja: 'hsl(340, 75%, 55%)',
+    Tagihan: 'hsl(45, 93%, 47%)',
+    Lainnya: 'hsl(215, 16%, 47%)',
   };
 
   const expenses = transactions.filter((t) => t.type === 'expense');

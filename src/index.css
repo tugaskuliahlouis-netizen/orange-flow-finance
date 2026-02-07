@@ -2,124 +2,114 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Money Manager - GFX Neon Edition Design System */
+/* Money Manager - Premium Orange Edition Design System */
 
 @layer base {
   :root {
-    /* Light Mode - Clean with Neon Accents */
-    --background: 220 20% 97%;
-    --foreground: 220 20% 10%;
+    /* Light Mode - Clean Financial Dashboard */
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 10%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 10%;
+    --popover-foreground: 222 47% 11%;
 
-    /* Neon Cyan - Primary Brand Color */
-    --primary: 180 100% 45%;
-    --primary-foreground: 220 20% 5%;
+    /* Orange Accent - Primary Brand Color */
+    --primary: 24 95% 53%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Electric Magenta - Secondary */
-    --secondary: 320 90% 55%;
-    --secondary-foreground: 0 0% 100%;
+    /* Secondary - Subtle backgrounds */
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 220 15% 92%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 180 100% 45%;
-    --accent-foreground: 220 20% 5%;
+    --accent: 24 95% 53%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 85% 60%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Success - Neon Green */
-    --success: 150 100% 45%;
-    --success-foreground: 220 20% 5%;
+    /* Success - For income/positive values */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
 
-    --border: 220 15% 88%;
-    --input: 220 15% 88%;
-    --ring: 180 100% 45%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 24 95% 53%;
 
     --radius: 0.75rem;
 
     /* Sidebar - Light theme */
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 220 10% 45%;
-    --sidebar-primary: 180 100% 45%;
-    --sidebar-primary-foreground: 220 20% 5%;
-    --sidebar-accent: 180 100% 95%;
-    --sidebar-accent-foreground: 180 100% 35%;
-    --sidebar-border: 220 15% 88%;
-    --sidebar-ring: 180 100% 45%;
+    --sidebar-foreground: 215 16% 47%;
+    --sidebar-primary: 24 95% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 24 100% 97%;
+    --sidebar-accent-foreground: 24 95% 53%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 24 95% 53%;
 
-    /* GFX Gradient Colors */
-    --gradient-start: 180 100% 45%;
-    --gradient-end: 280 100% 60%;
+    /* Custom Orange Gradient */
+    --gradient-orange-start: 24 95% 53%;
+    --gradient-orange-end: 20 90% 48%;
 
-    /* Chart Colors - Neon Palette */
-    --chart-income: 150 100% 45%;
-    --chart-expense: 0 85% 60%;
-    --chart-food: 180 100% 50%;
-    --chart-transport: 280 100% 60%;
-    --chart-entertainment: 320 90% 55%;
-    --chart-shopping: 45 100% 55%;
-    --chart-bills: 200 100% 50%;
+    /* Chart Colors */
+    --chart-income: 142 76% 36%;
+    --chart-expense: 0 84% 60%;
+    --chart-food: 24 95% 53%;
+    --chart-transport: 199 89% 48%;
+    --chart-entertainment: 280 65% 60%;
+    --chart-shopping: 340 75% 55%;
+    --chart-bills: 45 93% 47%;
   }
 
   .dark {
-    /* Dark Mode - Deep Black with Neon Glow */
-    --background: 220 25% 6%;
-    --foreground: 180 10% 95%;
+    /* Dark Mode - Slate Premium */
+    --background: 222 47% 3%;
+    --foreground: 210 40% 98%;
 
-    --card: 220 25% 9%;
-    --card-foreground: 180 10% 95%;
+    --card: 222 47% 6%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 220 25% 9%;
-    --popover-foreground: 180 10% 95%;
+    --popover: 222 47% 6%;
+    --popover-foreground: 210 40% 98%;
 
-    /* Neon Cyan - Primary */
-    --primary: 180 100% 50%;
-    --primary-foreground: 220 25% 5%;
+    /* Orange Accent stays vibrant */
+    --primary: 24 95% 53%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Electric Magenta */
-    --secondary: 320 90% 60%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 217 33% 12%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 220 20% 15%;
-    --muted-foreground: 220 10% 60%;
+    --muted: 217 33% 12%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 180 100% 50%;
-    --accent-foreground: 220 25% 5%;
+    --accent: 24 95% 53%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 75% 50%;
+    --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 100%;
 
-    --success: 150 100% 50%;
-    --success-foreground: 220 25% 5%;
+    --success: 142 76% 42%;
+    --success-foreground: 0 0% 100%;
 
-    --border: 220 20% 18%;
-    --input: 220 20% 18%;
-    --ring: 180 100% 50%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 24 95% 53%;
 
     /* Sidebar - Dark theme */
-    --sidebar-background: 220 25% 7%;
-    --sidebar-foreground: 220 10% 60%;
-    --sidebar-primary: 180 100% 50%;
-    --sidebar-primary-foreground: 220 25% 5%;
-    --sidebar-accent: 180 100% 15%;
-    --sidebar-accent-foreground: 180 100% 60%;
-    --sidebar-border: 220 20% 18%;
-    --sidebar-ring: 180 100% 50%;
-
-    /* Chart Colors - Neon Palette Dark */
-    --chart-income: 150 100% 55%;
-    --chart-expense: 0 85% 60%;
-    --chart-food: 180 100% 55%;
-    --chart-transport: 280 100% 65%;
-    --chart-entertainment: 320 90% 60%;
-    --chart-shopping: 45 100% 60%;
-    --chart-bills: 200 100% 55%;
+    --sidebar-background: 222 47% 4%;
+    --sidebar-foreground: 215 20% 65%;
+    --sidebar-primary: 24 95% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 24 100% 10%;
+    --sidebar-accent-foreground: 24 95% 53%;
+    --sidebar-border: 217 33% 17%;
+    --sidebar-ring: 24 95% 53%;
   }
 }
 
@@ -135,73 +125,70 @@
 }
 
 @layer components {
-  /* GFX Gradient Button */
+  /* Orange Gradient Button */
   .btn-gradient {
-    @apply relative overflow-hidden rounded-lg px-6 py-3 font-semibold transition-all duration-300;
-    background: linear-gradient(135deg, hsl(180, 100%, 50%) 0%, hsl(280, 100%, 60%) 100%);
-    color: hsl(220, 25%, 5%);
-    box-shadow: 0 0 20px -5px hsla(180, 100%, 50%, 0.6), 0 0 40px -10px hsla(280, 100%, 60%, 0.4);
+    @apply relative overflow-hidden rounded-lg px-6 py-3 font-semibold text-white transition-all duration-300;
+    background: linear-gradient(135deg, hsl(24, 95%, 53%) 0%, hsl(20, 90%, 48%) 100%);
+    box-shadow: 0 4px 15px -3px hsla(24, 95%, 53%, 0.4);
   }
 
   .btn-gradient:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 30px -5px hsla(180, 100%, 50%, 0.8), 0 0 60px -10px hsla(280, 100%, 60%, 0.6);
+    box-shadow: 0 8px 25px -5px hsla(24, 95%, 53%, 0.5);
   }
 
-  /* Neon Glow Card Effect */
+  /* Glowing Card Effect */
   .card-glow {
     @apply relative transition-all duration-300;
   }
 
   .card-glow:hover {
-    box-shadow: 0 0 30px -10px hsla(180, 100%, 50%, 0.4), 0 0 60px -20px hsla(280, 100%, 60%, 0.3);
+    box-shadow: 0 0 30px -5px hsla(24, 95%, 53%, 0.3);
   }
 
   .card-glow::before {
     content: '';
     @apply absolute inset-0 rounded-xl opacity-0 transition-opacity duration-300 pointer-events-none;
-    background: linear-gradient(135deg, hsla(180, 100%, 50%, 0.08) 0%, hsla(280, 100%, 60%, 0.05) 100%);
+    background: linear-gradient(135deg, hsla(24, 95%, 53%, 0.1) 0%, transparent 50%);
   }
 
   .card-glow:hover::before {
     @apply opacity-100;
   }
 
-  /* Neon Border Glow on Hover */
+  /* Orange Border Glow on Hover */
   .border-glow {
     @apply border-2 border-transparent transition-all duration-300;
   }
 
   .border-glow:hover {
-    border-color: hsl(180, 100%, 50%);
-    box-shadow: 0 0 20px -5px hsla(180, 100%, 50%, 0.6), inset 0 0 20px -10px hsla(180, 100%, 50%, 0.2);
+    border-color: hsl(24, 95%, 53%);
+    box-shadow: 0 0 20px -5px hsla(24, 95%, 53%, 0.5);
   }
 
   /* Premium Card Style */
   .premium-card {
     @apply bg-card rounded-xl border border-border p-6 card-glow;
-    background: linear-gradient(180deg, hsl(var(--card)) 0%, hsl(var(--card) / 0.95) 100%);
   }
 
-  /* Balance Display - Neon Gradient */
+  /* Balance Display */
   .balance-text {
     @apply text-4xl md:text-5xl font-bold tracking-tight;
-    background: linear-gradient(135deg, hsl(180, 100%, 60%) 0%, hsl(280, 100%, 70%) 50%, hsl(320, 90%, 65%) 100%);
+    background: linear-gradient(135deg, hsl(var(--foreground)) 0%, hsl(var(--muted-foreground)) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 0 0 40px hsla(180, 100%, 50%, 0.3);
   }
 
-  /* GFX Gradient Text */
+  /* Orange Accent Text */
   .text-gradient-orange {
-    background: linear-gradient(135deg, hsl(180, 100%, 55%) 0%, hsl(280, 100%, 65%) 50%, hsl(320, 90%, 60%) 100%);
+    background: linear-gradient(135deg, hsl(24, 95%, 53%) 0%, hsl(20, 90%, 48%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
-  /* Scanning Animation - Neon Style */
+  /* Scanning Animation */
   @keyframes scan {
     0%, 100% { transform: translateY(0); opacity: 0.5; }
     50% { transform: translateY(100%); opacity: 1; }
@@ -209,31 +196,17 @@
 
   .scan-line {
     animation: scan 2s ease-in-out infinite;
-    background: linear-gradient(180deg, transparent, hsl(180, 100%, 50%), hsl(280, 100%, 60%), transparent);
+    background: linear-gradient(180deg, transparent, hsl(24, 95%, 53%), transparent);
   }
 
-  /* Pulse Animation - Neon Glow */
-  @keyframes pulse-neon {
-    0%, 100% { 
-      box-shadow: 0 0 5px hsla(180, 100%, 50%, 0.4), 0 0 20px hsla(180, 100%, 50%, 0.2);
-    }
-    50% { 
-      box-shadow: 0 0 20px hsla(180, 100%, 50%, 0.6), 0 0 40px hsla(180, 100%, 50%, 0.4), 0 0 60px hsla(280, 100%, 60%, 0.2);
-    }
+  /* Pulse Animation for Active States */
+  @keyframes pulse-orange {
+    0%, 100% { box-shadow: 0 0 0 0 hsla(24, 95%, 53%, 0.4); }
+    50% { box-shadow: 0 0 0 10px hsla(24, 95%, 53%, 0); }
   }
 
-  .pulse-neon {
-    animation: pulse-neon 2s infinite;
-  }
-
-  /* Glow Text Animation */
-  @keyframes glow-text {
-    0%, 100% { text-shadow: 0 0 10px hsla(180, 100%, 50%, 0.5); }
-    50% { text-shadow: 0 0 20px hsla(180, 100%, 50%, 0.8), 0 0 30px hsla(280, 100%, 60%, 0.4); }
-  }
-
-  .glow-text {
-    animation: glow-text 3s ease-in-out infinite;
+  .pulse-orange {
+    animation: pulse-orange 2s infinite;
   }
 
   /* Smooth number counter animation */
@@ -246,25 +219,21 @@
     animation: countUp 0.5s ease-out forwards;
   }
 
-  /* Health Score Ring - Neon */
+  /* Health Score Ring */
   .health-ring {
     stroke-dasharray: 251.2;
     stroke-dashoffset: 251.2;
     transition: stroke-dashoffset 1s ease-out;
-    filter: drop-shadow(0 0 6px hsla(180, 100%, 50%, 0.6));
   }
 
-  /* Cyberpunk Grid Background */
-  .cyber-grid {
-    background-image: 
-      linear-gradient(hsla(180, 100%, 50%, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, hsla(180, 100%, 50%, 0.03) 1px, transparent 1px);
-    background-size: 50px 50px;
+  /* Tab Indicator */
+  .tab-indicator {
+    @apply absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-300;
   }
 }
 
 @layer utilities {
-  /* Scrollbar Styling - Neon */
+  /* Scrollbar Styling */
   .scrollbar-thin::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -275,33 +244,15 @@
   }
 
   .scrollbar-thin::-webkit-scrollbar-thumb {
-    @apply rounded-full;
-    background: linear-gradient(180deg, hsl(180, 100%, 50%) 0%, hsl(280, 100%, 60%) 100%);
+    @apply bg-border rounded-full;
   }
 
   .scrollbar-thin::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, hsl(180, 100%, 60%) 0%, hsl(280, 100%, 70%) 100%);
+    @apply bg-muted-foreground/50;
   }
 
-  /* Glass Effect - Neon Tint */
+  /* Glass Effect */
   .glass {
     @apply bg-card/80 backdrop-blur-xl;
-    border: 1px solid hsla(180, 100%, 50%, 0.1);
-  }
-
-  /* Neon Underline */
-  .neon-underline {
-    position: relative;
-  }
-
-  .neon-underline::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, hsl(180, 100%, 50%), hsl(280, 100%, 60%), hsl(320, 90%, 55%));
-    box-shadow: 0 0 10px hsla(180, 100%, 50%, 0.5);
   }
 }
